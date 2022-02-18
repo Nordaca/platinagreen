@@ -1,0 +1,123 @@
+/* Imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Slabo+27px&family=Source+Sans+Pro:wght@700&display=swap");
+
+/* Body Editing */
+
+html,
+body {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+body > * {
+  flex-shrink: 0;
+}
+
+body {
+  background-color: rgb(132, 147, 124);
+  padding: 0px;
+  margin: 0px;
+}
+
+.contentContainer {
+  background-color: rgb(205, 207, 204);
+  display: block;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  border-style: double;
+  margin-left: 12em;
+  margin-right: 12em;
+  border-bottom-style: none;
+  flex-grow: 1;
+}
+
+p {
+  font-family: "Inconsolata", monospace;
+  text-align: justify;
+  font-size: 1.25em;
+}
+
+.articleListing {
+  display: list-item;
+}
+
+.nav {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  top: 0;
+  padding: 0.5em;
+  background-color: rgb(132, 147, 124);
+  margin-left: 12em;
+  margin-right: 12em;
+}
+
+.subnav {
+  position: sticky;
+  bottom: 0;
+  top: 60px;
+}
+
+.navTitle {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 3em;
+}
+
+li {
+  display: inline;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+a,
+a:visited {
+  font-family: "Slabo 27px", serif;
+  color: rgb(10, 10, 10);
+  text-decoration-line: none;
+}
+
+.navItemCurrent {
+  text-decoration-line: underline;
+  border-radius: 0.25em;
+}
+
+a:hover {
+  color: rgb(166, 204, 145);
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 5em;
+  box-sizing: border-box;
+}
+
+input[type="email"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2em;
+}

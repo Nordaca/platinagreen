@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platina Green</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="navTitle">Platina Green</div>
+        <ul class="navList">
+            <li class="navItem"><a href="articles.html">Articles</a></li>
+            <li class="navItem"><a class="navItemCurrent" href="about.html">About</a></li>
+            <li><a href="../index.html">Home</a></li>
+        </ul>
+    </nav>
+    <container class="contentContainer">
+        <p>This website was made for the express purpose of cataloging mutliple articles of media, whether that be video games, old photgraphs, even NFTs. I believe in making everything on the internet permanent. If the blockchain fails, then no matter how...unpleasent...NFTs are to look at, they are still <i>art</i>. That's the important take-away with this site. I want people to realize that art is objectively anything that someone puts their minds to. Any kind of process of natural thought leads to art. This could be actual <i>art</i>, like a painting or an illustration. This could also be stuff like music and other things. I will always try to give credit where credit is due, but if you have an issue you may file a complaint with the form below.</p>
+        <hr>
+        <form action="https://formsubmit.co/nordacaofficial@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New submission!">
+            <p>Message:</p><input type="text" name="name" placeholder="Write your message here..."  width="200px" required>
+            <p>Email Address:</p><input type="email" name="email" placeholder="Email Address" required>
+            <button type="submit" onclick="document.getElementById('formAffirmation').innerHTML = 'Thank you so much for the submission. Expect a response soon.'">Send</button>
+        </form>
+        <p id="formAffirmation"></p>
+    </container>
+</body>
+</html>
